@@ -1,0 +1,39 @@
+.home{
+
+  .image-container{
+    width: 100%; /* Set the width of the container to 100% */
+    height: auto;
+    padding-bottom: 75%;
+    position: relative;
+    img{
+      position: absolute;
+      object-fit: contain;
+      width: 100%;
+      filter: brightness(40%);
+    }
+
+    h1{
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 84px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: "Geologica", sans-serif;
+
+    }
+    p{
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-size: 35px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-family: "Geologica", sans-serif;
+    }
+  }
+
+}

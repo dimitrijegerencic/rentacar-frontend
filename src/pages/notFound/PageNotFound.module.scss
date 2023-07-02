@@ -1,0 +1,72 @@
+.main{
+  //font-family: "Geologica", sans-serif;
+
+  background-color: #f6f6f6;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap:10px;
+
+  h1{
+    color: #FF5252;
+    font-size: 70px;
+
+    @media screen and (max-width: 1176px) {
+      font-size: 60px;
+    }
+
+    @media screen and (max-width: 995px) {
+      font-size: 50px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 30px;
+    }
+  }
+
+  .error-msg{
+    font-size: 25px;
+    color: #3c3c3c;
+    text-align: center;
+
+    @media screen and (max-width: 1176px) {
+      font-size: 20px;
+    }
+
+    @media screen and (max-width: 995px) {
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 15px;
+    }
+
+  }
+
+  .go-back{
+    text-decoration: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: #3c3c3c;
+
+    &:hover{
+      color: #FF5252;
+    }
+
+    @media screen and (max-width: 1176px) {
+      font-size: 28px;
+    }
+
+    @media screen and (max-width: 995px) {
+      font-size: 25px;
+    }
+
+    @media screen and (max-width: 800px) {
+      font-size: 17px;
+    }
+  }
+}

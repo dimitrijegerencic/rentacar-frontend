@@ -1,0 +1,19 @@
+.container{
+  text-align: center;
+  .login-btn{
+    background-color: #FF5252;
+    width: 140px;
+    height: 30px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+    font-family: "Geologica", sans-serif;
+
+    &:hover{
+      transform: scale(1.1);
+    }
+  }
+}

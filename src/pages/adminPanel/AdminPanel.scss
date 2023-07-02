@@ -1,0 +1,46 @@
+
+
+.container{
+
+  .title-and-add{
+    display: flex;
+    align-items: center;
+
+    h3{
+      margin-right: auto;
+      font-size: 30px !important;
+      font-family: "KappaTextLight", sans-serif;
+      margin-bottom: 30px;
+
+    }
+
+    p{
+      margin-left: auto;
+      cursor: pointer;
+      &:hover{
+        color: cornflowerblue;
+      }
+    }
+  }
+
+  .action-buttons{
+    display: flex;
+    justify-content: flex-end;
+    gap:20px;
+  }
+}
+
+.delete-form{
+  text-align: center;
+  p{
+    font-size: 16px;
+  }
+  .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+  }
+}
+

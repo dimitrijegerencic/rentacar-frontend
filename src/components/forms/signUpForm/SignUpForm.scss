@@ -1,0 +1,65 @@
+.signup-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 17px;
+
+  .signup-text{
+    text-align: center;
+
+    .signup-title{
+      font-size: 40px;
+      color:#3c3c3c;
+
+      @media only screen and (max-width: 1000px) {
+        font-size: 30px;
+      }
+
+      @media only screen and (max-width: 700px) {
+        font-size: 24px;
+      }
+    }
+
+    .signup-subtitle-1{
+      font-size: 18px;
+      @media only screen and (max-width: 700px) {
+        font-size: 14px;
+      }
+    }
+
+    .signup-subtitle-2{
+      @media only screen and (max-width: 700px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+
+  .section-1, .section-2, .section-3{
+    display: flex;
+    gap: 15px;
+
+    @media only screen and (max-width: 700px) {
+      flex-direction: column;
+      gap: 1px;
+    }
+  }
+
+}
+
+.ant-input::placeholder {
+  font-family: Geologica, sans-serif;
+  font-size: 14px;
+}
+
+.ant-input, .ant-input-password {
+  width: 250px;
+  font-family: Geologica, sans-serif;
+}
+
+.ant-form-item-explain-error{
+  font-family: Geologica, sans-serif;
+  padding:4px;
+  font-size: 13px;
+}

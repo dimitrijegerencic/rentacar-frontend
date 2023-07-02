@@ -1,0 +1,49 @@
+.login-form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 14px;
+
+  .login-text{
+    text-align: center;
+
+    .login-title{
+      font-size: 40px;
+      color:#3c3c3c;
+
+      @media only screen and (max-width: 700px) {
+        font-size: 20px;
+      }
+    }
+
+    .login-subtitle-1{
+      font-size: 18px;
+      @media only screen and (max-width: 700px) {
+        font-size: 16px;
+      }
+    }
+
+    .login-subtitle-2{
+      @media only screen and (max-width: 700px) {
+        font-size: 12px;
+      }
+    }
+  }
+
+}
+
+.ant-input::placeholder {
+  font-family: Geologica, sans-serif;
+  font-size: 14px;
+}
+
+.ant-input, .ant-input-password {
+  width: 250px;
+  font-family: Geologica, sans-serif;
+}
+
+.ant-form-item-explain-error{
+  font-family: Geologica, sans-serif;
+  padding:4px;
+}

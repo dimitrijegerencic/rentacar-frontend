@@ -1,0 +1,23 @@
+.footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap:20px;
+  min-height: 30vh;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+
+  p{
+    color: #3c3c3c;
+  }
+
+  .divider{
+    height: 1px;
+    background-color: #787675;
+    width: 80%;
+    margin-bottom: 50px;
+
+  }
+}

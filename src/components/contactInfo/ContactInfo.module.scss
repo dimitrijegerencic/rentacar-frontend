@@ -1,0 +1,14 @@
+.contact-info{
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+
+  .contact-text{
+    font-family: "KappaTextLight", sans-serif;
+    font-size: 23px;
+  }
+
+}

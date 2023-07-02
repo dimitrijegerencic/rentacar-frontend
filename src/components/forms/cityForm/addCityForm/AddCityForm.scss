@@ -1,0 +1,13 @@
+.form-container{
+  .city-form{
+    display: flex;
+    flex-direction: column;
+
+    .form-items{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+    }
+  }
+}

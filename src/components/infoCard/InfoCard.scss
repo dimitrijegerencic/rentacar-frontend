@@ -1,0 +1,17 @@
+.content{
+  display: flex;
+  gap: 30px;
+  align-items: center;
+
+  .card-description{
+
+    .highlight{
+      font-weight: bold;
+    }
+
+    .read-more{
+      color: #1677ff;
+      cursor: pointer;
+    }
+  }
+}
