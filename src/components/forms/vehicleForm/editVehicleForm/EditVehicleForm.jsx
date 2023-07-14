@@ -33,6 +33,7 @@ const EditVehicleForm = ({ name, id, onCancel, loadData}) => {
     useEffect(() => {
         axios.get(`http://localhost:3001/vehicle/${id}`)
             .then((response) => {
+                console.log(response.data)
                 setModelID(response.data[0].model_id)
                 setCompanyID(response.data[0].company_id)
                 setClassID(response.data[0].class_id)

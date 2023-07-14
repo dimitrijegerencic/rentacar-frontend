@@ -55,6 +55,7 @@ const AdminPanel = ({loggedUser}) => {
         axios.delete(`http://localhost:3001/city/${cityID}`)
             .then(()=>{
                 message.success("City deleted successfully!")
+                close()
                 loadCities(setCities)
         }).catch(err => {
             message.error(err)
