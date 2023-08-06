@@ -30,15 +30,17 @@ const LoginForm = ({loggedUser, setLoggedUser}) => {
                     setTimeout(()=>{
                         navigate('/')
                     }, 2000)
-                    // console.log(response.data)
 
                 }
             });
     }
 
     useEffect(() => {
+        
         // Load loggedUser from local storage when component is rendered
+
         const storedUser = localStorage.getItem('loggedUser');
+
         if (storedUser) {
             setLoggedUser(JSON.parse(storedUser));
         }
