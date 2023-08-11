@@ -68,7 +68,6 @@ const LoginForm = ({loggedUser, setLoggedUser}) => {
                 <Input.Password placeholder={'Password'}/>
             </Form.Item>
             <LoginButton title={'Log in'}/>
-
         </Form>
         </>
 }
