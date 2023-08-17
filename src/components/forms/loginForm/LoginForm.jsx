@@ -44,7 +44,7 @@ const LoginForm = ({loggedUser, setLoggedUser}) => {
         if (storedUser) {
             setLoggedUser(JSON.parse(storedUser));
         }
-    }, []);
+    }, [setLoggedUser]);
 
     useEffect(() => {
         // Save loggedUser to local storage whenever it changes
