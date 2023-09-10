@@ -2,7 +2,6 @@ import React, {useEffect} from "react";
 import classes from "./MakeReservation.module.scss";
 import {connect} from "react-redux";
 import AddReservationForm from "../../components/forms/reservationForm/AddReservationForm";
-import {Select} from "antd";
 import {useParams} from "react-router-dom";
 import {useNavigate} from "react-router";
 
@@ -21,8 +20,6 @@ const MakeReservation = ({loggedUser}) => {
             navigate('/login')
         }
     })
-
-    const { Option } = Select;
 
     const { id } = useParams();
 
