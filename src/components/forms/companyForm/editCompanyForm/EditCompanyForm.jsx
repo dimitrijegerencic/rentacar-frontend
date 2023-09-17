@@ -29,7 +29,6 @@ const EditCompanyForm = ({ name, id, onCancel }) => {
     /* Function that is called on submit */
 
     function onFinish(values) {
-        console.log(values)
         axios.put(`http://localhost:3001/company/${id}`, values)
             .then((response) => {
                 if (response.status === 200) {

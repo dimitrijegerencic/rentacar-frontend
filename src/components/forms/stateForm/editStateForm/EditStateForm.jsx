@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { Select } from 'antd';
 import { Form, Input } from "antd";
 import AddButton from "../../../buttons/addButton/AddButton";
 import axios from "axios";
@@ -8,15 +7,12 @@ import './EditStateForm.scss';
 
 const EditStateForm = ({ name, id, onCancel }) => {
 
-    const { Option } = Select;
 
     const stateNameReqMsq = 'State is required';
 
     const [stateName, setStateName] = useState("");
 
     /* To populate select field upfront */
-
-    const [stateID, setStateID] = useState("");
 
     const [loading, setLoading] = useState(true);
 
@@ -27,13 +23,12 @@ const EditStateForm = ({ name, id, onCancel }) => {
                 setLoading(false)
             })
             .catch((err) => console.log(err));
-    }, [stateName]);
+    }, [id, stateName]);
 
 
     /* Function that is called on submit */
 
     function onFinish(values) {
-        console.log(values)
         axios.put(`http://localhost:3001/state/${id}`, values)
             .then((response) => {
                 if (response.status === 200) {

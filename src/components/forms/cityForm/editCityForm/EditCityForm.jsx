@@ -43,7 +43,6 @@ const EditCityForm = ({ name, id, onCancel, loadData }) => {
     /* Function that is called on submit */
 
     function onFinish(values) {
-        console.log(values)
         axios.put(`http://localhost:3001/city/${id}`, values)
             .then((response) => {
                 if (response.status === 200) {

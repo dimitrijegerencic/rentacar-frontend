@@ -20,7 +20,6 @@ const EditClassForm = ({ name, id, onCancel }) => {
     useEffect(() => {
         axios.get(`http://localhost:3001/class/${id}`)
             .then((response) => {
-                console.log(response.data[0])
                 setClassName(response.data[0].class_name)
                 setLoading(false)
             })
