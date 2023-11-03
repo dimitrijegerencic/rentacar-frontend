@@ -14,7 +14,6 @@ import MakeReservation from "./pages/makeReservation/MakeReservation";
 import ReservationsPage from "./pages/reservations/ReservationsPage";
 import VehiclesPage from "./pages/vehicles/VehiclesPage";
 
-
 const router = createBrowserRouter(
     createRoutesFromElements (
         <>
